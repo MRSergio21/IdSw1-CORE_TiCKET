@@ -1,0 +1,47 @@
+@startuml
+class CORE{}
+class Modulos{}
+class Vista_Home{}
+class Inicio_de_Sesion{
+  + usuario
+  + contraseña
+  + cuenta de google
+}
+class Asignaciones{}
+class Modulo_Docente{}
+class Bajas{}
+class Notificaciones{}
+class Migraciones{}
+class Creación_Docente{}
+class Edición_Docente{}
+class Filtrado_Docente{}
+class Función_Busqueda{}
+class Función_exportar{}
+class Perfil{}
+class Función_Seguimiento{}
+class Temporal{}
+class Permanente{}
+class Reincorporación{}
+
+
+CORE -- Modulos
+
+Modulos -- Bajas
+Bajas -- Temporal : puede ser
+Bajas -- Permanente : puede ser
+Bajas -- Reincorporación : puede ser
+Modulos -- Modulo_Docente
+Modulo_Docente -- Creación_Docente
+Modulo_Docente -- Edición_Docente
+Modulo_Docente -- Filtrado_Docente
+Modulo_Docente -- Función_Busqueda
+Modulo_Docente -- Función_exportar
+Modulo_Docente -- Perfil
+Modulo_Docente -- Función_Seguimiento
+
+Modulos -- Inicio_de_Sesion
+Modulos -- Vista_Home
+Modulos -- Asignaciones
+Modulos -- Migraciones
+Modulos -- Notificaciones
+@enduml
