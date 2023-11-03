@@ -1,0 +1,30 @@
+@startuml ModeloDominioCore
+title Modelo de dominio de la aplicación Core
+PACKAGE "Core" {
+
+    ENTITY "Usuario" {
+        +Rol
+    }
+    ENTITY "Docente"
+    ENTITY "Permisos"
+    ENTITY "Asignatura"
+    ENTITY "Baja" {
+        +Tipo
+    }
+    ENTITY "Notificacion"
+    ENTITY "Configuracion"
+    ENTITY "Migración"
+    ENTITY "Login"
+    ENTITY "Dashboard"
+
+    Usuario --|> Login : "Se autentica mediante"
+    Usuario --|> Dashboard : "Ve opciones de"
+    Usuario --|> Docente : "Gestiona"
+    Usuario --|> Permisos : "Tiene"
+    Docente --|> Asignatura : "Enseña"
+    Docente --|> Baja : "Puede tener"
+    Docente --|> Notificacion : "Recibe"
+    Usuario --|> Configuracion : "Gestiona"
+    Usuario --|> Migración : "Realiza"
+}
+@enduml
