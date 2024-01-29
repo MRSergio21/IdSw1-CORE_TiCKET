@@ -10,10 +10,10 @@ Este repositorio contiene toda la documentación y recursos necesarios para el d
 
 # Documentación 📫
 
--  [Modelo Del Dominio](/modelosUML/DiagramasModeloDominio/README.md)
+- [Modelo Del Dominio](/modelosUML/DiagramasModeloDominio/README.md)
 
 - [Caso De Uso](/modelosUML/CasosDeUsos/README.md)
 
-- [Prototipos de interfaz de usuario](/modelosUML/CasosDeUsos/README.md)
+- [Prototipos de interfaz de usuario](/imagenes/interfaces/README.md)
 
-- [Glosario](/modelosUML/CasosDeUsos/README.md)
+- [Glosario](/modelosUML/README.md)
